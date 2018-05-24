@@ -33,6 +33,15 @@ path:hover, circle:hover {
 }
 
 .regulated {
-  stroke: #031d4e !important;
+  //stroke: #031d4e !important;
   fill: #3071ed !important;
+}
+.unregulated:hover {
+  fill: #636a79 !important;
+  stroke: #fff !important;
+}
+
+.unregulated {
+  //stroke: #031d4e !important;
+  fill: #c9ccd1 !important;
 }

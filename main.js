@@ -56,7 +56,7 @@ $.each(states, function(x){
 
 //Apply URL for DC
 $("#DC").click(function(){
-  window.open("https://www.nachi.org/dc-certified-licensed-home-inspector.htm");
+  window.open("https://nachi.org/cpi-requirements");
 })
 
 // TO-DO
@@ -69,9 +69,18 @@ var regulated = ['AL','AK','AZ','AR','CT','DE','FL','IL','IN','KY','LA','MD','MA
     // Add CSS class .regulated
     $("#" + regulated[x]).addClass('regulated');
 
-
   })
 
 
 
   // Send unregulated states to 'https://www.nachi.org/cpi-requirements.htm'
+  // if hasclass .regulated
+  $.each(states, function(x){
+    if (!$("#" + stateAbbrev[x]).hasClass('regulated')) {
+      // unregulated opens cpi-requirements
+      $("#" + stateAbbrev[x]).addClass('unregulated').unbind('click').bind("click", function(){
+        window.open("https://nachi.org/cpi-requirements");
+      })
+    }
+
+  })
