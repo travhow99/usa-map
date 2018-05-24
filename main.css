@@ -30,3 +30,8 @@ path:hover, circle:hover {
   padding: 5px;
   font-family: arial;
 }
+
+.regulated {
+  stroke: #031d4e !important;
+  fill: #3071ed !important;
+}
