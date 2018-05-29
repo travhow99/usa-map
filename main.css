@@ -33,14 +33,14 @@ path:hover, circle:hover {
   font-family: arial;
 }
 
-.regulated {
+.unregulated {
   fill: #3071ed !important;
 }
-.unregulated:hover {
+.regulated:hover {
   fill: #636a79 !important;
   stroke: #fff !important;
 }
 
-.unregulated {
+.regulated {
   fill: #c9ccd1 !important;
 }
